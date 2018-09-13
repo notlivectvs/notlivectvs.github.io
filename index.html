@@ -1,0 +1,104 @@
+<!DOCTYPE>
+<html xmlns="https://www.w3.org/TR/html/">
+<head>
+	<title>LiveMarikinaCamera.io</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Unofficial live Marikina camera relay">
+	<link rel="icon" type="image/png" href="https://www.marikina.gov.ph///images/favicon.ico" sizes="32x32">
+	<style type="text/css">
+		body {color: #FFF;
+		text-align: center;
+		font-family: Verdana;
+		}
+		// main text
+		h1 {font-size: 70px;
+			color: #FFF;
+			text-align: center;
+			font-weight: bold;
+		}
+		//medium text
+		h2 {font-size: 20px;
+			text-align: center;
+		   }
+		   
+		.BlackText {
+			color: #000;
+			}
+			
+		//button parent
+		.button {
+			border: none;
+			color: #FFCC00;
+			padding: 8px 16px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 8px;
+			margin: 4px 2px;
+			-webkit-transition-duration: 0.4s; /* Safari */
+			transition-duration: 0.4s;
+			cursor: pointer;
+		}
+		/* station buttons */
+		.button1 {
+			background-color: #40628a; 
+			color: white; 
+			border: 1px solid black;
+			width: 170px;
+			height: 30px;
+			font-size: 15px;
+			//font-family: "FontAwesome";
+			font-weight: bold;
+			text-align: center;
+			margin: 2px auto;
+			display: block;
+			}
+		.button1:hover {
+			background-color: white;
+			color: #40628a;
+			}
+			
+		/* width */
+		::-webkit-scrollbar {
+			width: 15px;
+		}
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: #f1f1f1; 
+		} 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: #888; 
+		}
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background: #555; 
+		}
+	</style>
+</head>
+
+<body id="mainbody" bgcolor="#232323" text="#FFFFFF">
+	   <!--width="642" height="482" style="border: 1px solid gray"-->
+	<h2><ul style="float:left;">
+		<br><button class="button button1" align="center" onclick="document.getElementById('camui').src='http://121.58.202.110:8080/jpeg?cam=3'"/>Nangka Brige
+		<br><button class="button button1" align="center" onclick="document.getElementById('camui').src='http://121.58.202.110:8080/jpeg?cam=2'"/>Marikina Brige
+		<br><button class="button button1" align="center" onclick="document.getElementById('camui').src='http://121.58.202.110:8080/jpeg?cam=1'"/>Barangka Brige
+		<br><button class="button button1" align="center" onclick="document.getElementById('camui').src='http://121.58.202.110:8080/jpeg?cam=9'"/>Tumana Brige
+		<br><button class="button button1" align="center" onclick="document.getElementById('camui').src='http://121.58.202.110:8080/jpeg?cam=4'"/>Sto. Nino Water Level
+		<br><button class="button button1" align="center" onclick="document.getElementById('camui').src='http://121.58.202.110:8080/jpeg?cam=10'"/>River Park
+		<br><button class="button button1" align="center" onclick="document.getElementById('camui').src='http://121.58.202.110:8080/jpeg?cam=6'"/>LRT FVR
+		<br><button class="button button1" align="center" onclick="document.getElementById('camui').src='http://121.58.202.110:8080/jpeg?cam=7'"/>Bon. Avenue
+		<br><button class="button button1" align="center" onclick="document.getElementById('camui').src='http://121.58.202.110:8080/jpeg?cam=11'"/>Sumulong Avenue
+		<br><button class="button button1" align="center" onclick="document.getElementById('camui').src=''"/>Disable cam
+		
+		</ul>
+	</h2>
+	<img id="camui" width="942" height="682" style="float:center;outline:1px transparent grey;" src="http://121.58.202.110:8080/jpeg?cam=4"/>
+	
+	<!-- Scripts -->
+	<!-- none! js not need -->
+	<script>
+		
+	</script>
+	</body>
+</html>
